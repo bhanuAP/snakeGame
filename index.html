@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Snake</title>
+    <link rel="stylesheet" href="snake.css">
+    <script src="src/utils.js" charset="utf-8"></script>
+    <script src="src/position.js" charset="utf-8"></script>
+    <script src="src/food.js" charset="utf-8"></script>
+    <script src="src/move.js" charset="utf-8"></script>
+    <script src="src/snake.js" charset="utf-8"></script>
+    <script src="src/draw.js" charset="utf-8"></script>
+    <script src="src/game.js" charset="utf-8"></script>
+    <script src="src/main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container" id="keys" tabindex="0">
+      <table class="game" id="grid">
+
+      </table>
+    </div>
+    <div id="hidden_tail">
+      <h1 class="scoreHeading">score</h1>
+      <h1 id="score">0</h1>
+    </div>
+    <div id="resetDetails">
+      <h1>you lost the game</h1>
+      <button type="button" id="replayButton" onclick="window.location.reload()">replay</button>
+    </div>
+    <div class="directionButtons">
+      <div class="upButton">
+        <button id="upButton" onclick="moveup()">UP</button>
+      </div>
+      <div class="downButton">
+        <button id="downButton" onclick="movedown()">DOWN</button>
+      </div>
+      <div class="leftButton">
+        <button id="leftButton" onclick="moveleft()">LEFT</button>
+      </div>
+      <div class="rightButton">
+        <button id="rightButton" onclick="moveright()">RIGHT</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+.container {
+  width: 960px;
+  margin: 0 auto;
+  background: #CAE1FF;
+}
+
+#grid {
+  border-collapse: collapse;
+}
+
+#grid td {
+  width: 8px;
+  height: 8px;
+}
+
+.snake {
+  background-color: black;
+}
+
+.snake_head {
+  background-color: red;
+}
+
+.food {
+  background-color: #E56717;
+  border-radius: 50%;
+}
+
+#hidden_tail {
+  margin-left: 1300px;
+  margin-top: -620px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.scoreHeading {
+  font-size: 40px;
+}
+
+#score {
+  margin-top: -15px;
+}
+
+.super-food {
+  background-color: #006400;
+  border-radius: 50%;
+}
+
+#resetDetails {
+  text-align: center;
+  margin-top: 550px;
+}
+
+#replayButton {
+  border-radius: 3px;
+  font-size: 30px;
+  background: #18CD06;
+}
+
+.directionButtons {
+  margin-left: 425px;
+  margin-right: 420px;
+}
+
+.upButton {
+  margin-left: 320px;
+  padding: 40px;
+}
+
+#upButton {
+  padding: 40px;
+}
+
+.downButton {
+  margin-left: 310px;
+  padding: 40px;
+}
+
+#downButton {
+  padding: 40px;
+}
+
+.leftButton {
+  margin-top: -225px;
+  margin-left: 210px;
+}
+
+#leftButton {
+  padding: 40px;
+}
+
+.rightButton {
+  margin-left: 495px;
+  margin-top: -95px;
+}
+
+#rightButton {
+  padding: 40px;
+}
