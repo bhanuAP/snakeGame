@@ -66,11 +66,6 @@ Game.prototype.createFood=function() {
   this.food=new Food(position,growthFactor,superFood);
 }
 
-Game.prototype.updateScore = function(score) {
-  document.getElementById('score').innerText = score;
-  return;
-}
-
 Game.prototype.hasLost = function() {
   let snakeHitWall = snake.outOfArea(numberOfRows,numberOfCols);
   let snakeEatenItSelf = snake.hasSnakeEatenItself();
@@ -79,14 +74,4 @@ Game.prototype.hasLost = function() {
 
 Game.prototype.isSnakeOutOfArea=function() {
   return snake.outOfArea(numberOfRows,numberOfCols);
-}
-
-Game.prototype.hideResetDetails = function() {
-  document.getElementById('resetDetails').style.visibility = "hidden";
-  return;
-}
-
-Game.prototype.showResetDetails = function() {
-  document.getElementById('resetDetails').style.visibility = "visible";
-  return;
 }

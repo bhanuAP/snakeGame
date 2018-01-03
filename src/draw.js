@@ -41,3 +41,18 @@ const drawFood=function(food) {
   else
   paintCell(food.getPosition(),"food");
 }
+
+const hideGameResetDetails = function() {
+  document.getElementById('resetDetails').style.visibility = "hidden";
+  return;
+}
+
+const showGameResetDetails = function() {
+  document.getElementById('resetDetails').style.visibility = "visible";
+  return;
+}
+
+const displayUpdatedScore = function() {
+  document.getElementById('score').innerText = score;
+  return;
+}

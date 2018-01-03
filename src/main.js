@@ -7,7 +7,7 @@ let animator=undefined;
 
 const updateGameStatus = function() {
   let score = (snake.getLength() - 1)*10;
-  game.updateScore(score);
+  displayUpdatedScore(score);
   game.grow();
   game.createFood();
   drawFood(game.getFood());
@@ -16,7 +16,7 @@ const updateGameStatus = function() {
 const finishGame = function() {
   clearInterval(animator);
   setTimeout(function(){
-    game.showResetDetails();
+    showGameResetDetails();
   },300);
 }
 
@@ -63,7 +63,7 @@ const createGame=function() {
 
 const startGame=function() {
   createGame();
-  game.hideResetDetails();
+  hideGameResetDetails();
   createSnake();
   drawGrids(numberOfRows,numberOfCols);
   drawSnake(game.getSnake());
