@@ -6,7 +6,8 @@ let numberOfCols=120;
 let animator=undefined;
 
 const updateGameStatus = function() {
-  let score = (snake.getLength() - 1)*10;
+  game.increaseScore();
+  let score = game.getScore();
   displayUpdatedScore(score);
   game.grow();
   game.createFood();

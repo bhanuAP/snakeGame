@@ -52,7 +52,7 @@ const showGameResetDetails = function() {
   return;
 }
 
-const displayUpdatedScore = function() {
+const displayUpdatedScore = function(score) {
   document.getElementById('score').innerText = score;
   return;
 }

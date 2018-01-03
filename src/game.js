@@ -3,6 +3,7 @@ const Game=function(topLeft,bottomRight,numberOfRows,numberOfCols) {
   this.bottomRight=bottomRight;
   this.numberOfRows=numberOfRows;
   this.numberOfCols = numberOfCols;
+  this.score = 0;
   this.snake={};
   this.food={};
 }
@@ -64,6 +65,14 @@ Game.prototype.createFood=function() {
     superFood=true;
   }
   this.food=new Food(position,growthFactor,superFood);
+}
+
+Game.prototype.increaseScore = function() {
+  this.score +=10;
+}
+
+Game.prototype.getScore = function() {
+  return this.score;
 }
 
 Game.prototype.hasLost = function() {
